@@ -1,0 +1,10 @@
+body{
+    --primary: #43C6AE;
+    --bg-primary: #EFFFFF;
+    --bg-primary-dark: #3DB39E;
+    --bg-primary-light: #7BDDD8;
+    --bg-primary-accent: #36F1E6;
+    --text: #232536;
+    --text-light: #6D6E76;
+    --text-accent: #592EA9;
+}
