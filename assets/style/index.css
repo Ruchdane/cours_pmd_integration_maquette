@@ -89,10 +89,10 @@ input::placeholder {
 .navbar {
     background-color: var(--primary);
     justify-content: space-between;
-    padding: 0px 80px;
+    padding: 13px 20px;
 }
 .navbar-navigation{
-    display: flex;
+    display: none;
     gap: 54px;
     align-items: center;
 }
@@ -104,6 +104,26 @@ input::placeholder {
     padding: 26px 0;
     gap: 34px;
 }
+
+.navbar-input {
+    display: none;
+}
+
+@media (min-width: 680px) {
+    .navbar {
+        padding: 12px 80px;
+    }
+    .navbar-burger {
+        display: none;
+    }
+    .navbar-navigation{
+        display: flex;
+    }
+    .navbar-input {
+        display: block;
+    }
+}
+
 
 .navbar-link {
     text-decoration: none;
