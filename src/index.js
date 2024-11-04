@@ -8,6 +8,19 @@ function linkBoxes() {
         }
     });
 }
+const sidebarId = "sidebar";
+const hiddenClassName = "hidden";
+let sidebar = document.getElementById(sidebarId);
 
+function toggleSidebarVisibility(){
+    let sidebarClassList = sidebar.classList;
+    sidebarClassList.contains(hiddenClassName) ? sidebarClassList.remove(hiddenClassName): sidebarClassList.add(hiddenClassName)
 
-document.addEventListener("DOMContentLoaded", () => linkBoxes());
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    linkBoxes();
+    document.querySelectorAll("[data-action='sidebar-toogle']")
+    .forEach(element => element.addEventListener("click", toggleSidebarVisibility)
+)
+});
