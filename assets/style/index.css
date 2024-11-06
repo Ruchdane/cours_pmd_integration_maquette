@@ -17,8 +17,7 @@ body{
 
 /* #region base */
 input{
-    height: 56px;
-    padding: 16px 17px;
+    height: 100%;
     font-size: 1.125rem;
     border-width: 0;
     border-radius: 5px;
@@ -29,12 +28,20 @@ input::placeholder {
     color: var(--primary);
 }
 
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
 .button {
     border: 1px solid var(--primary);
+    text-wrap: nowrap;
     cursor: pointer;
 }
 
 .button-primary {
+    height: max-content;
+    display: block;
     background-color: var(--bg-primary-accent);
     padding: 16px 48px;
     border-radius: 5px;
@@ -55,13 +62,16 @@ input::placeholder {
 
 .button-secondary {
     background-color: transparent;
-    font-weight: 700;
-    font-size: 1.75rem;
+    font-weight: 500;
+    font-size: 1.5rem;
     line-height: 2.5;
     border: none;
+    transition: all 0.3s ease-in;
 }
 
-.button-secondary:hover {
+.button-secondary:not(:disabled):hover {
+    transform: scale(1.2);
+    font-weight: 500;
     color: var(--text-accent);
 }
 
@@ -70,7 +80,6 @@ input::placeholder {
 }
 
 .button-secondary:disabled{
-    font-size: 1.5rem;
     line-height: 2;
     color: var(--text-light);
 }
@@ -82,8 +91,9 @@ input::placeholder {
 .navbar, .navbar-links, .flex {
     display: flex;
 }
+
 .navbar-input {
-    width: 222px;
+    max-width: 222px;
 }
 
 .navbar {
@@ -101,7 +111,6 @@ input::placeholder {
     list-style: none;
     font-weight: 400;
     line-height: 1.75rem;
-    padding: 26px 0;
     gap: 34px;
 }
 
@@ -111,7 +120,7 @@ input::placeholder {
 
 @media (min-width: 680px) {
     .navbar {
-        padding: 12px 80px;
+        padding: 20px 80px;
     }
     .navbar-action {
         display: none;
@@ -171,7 +180,7 @@ input::placeholder {
     padding: 0;
     list-style: none;
     font-family: Montserrat;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 39.01px;
 }
@@ -179,7 +188,6 @@ input::placeholder {
 .navbar-link {
 }
 /* #endregion */
-
 
 /* #region footer */
 footer {
@@ -204,9 +212,13 @@ footer {
 
 .footer-cta_description {
     color: var(--white);
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 700;
     max-width: 562px;
+}
+
+.footer-cta_input{
+    padding: 16px 17px;
 }
 
 @media (min-width: 680px) {
@@ -229,7 +241,7 @@ footer {
 /* #region breadcrumb */
 .breadcrumb{
     list-style: none;
-    display: inline;
+    display: block;
     padding: 44px 0;
     font-weight: 700;
     color: var(--primary);
