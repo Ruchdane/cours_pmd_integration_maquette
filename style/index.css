@@ -2,11 +2,11 @@
 
 .banner {
     background-color: var(--bg-primary-light);
-    padding: max(4%,62px) 6%;
+    padding: 62px 7% 37px;
 }
 
 .banner-image {
-    margin-bottom: 12px;
+    margin-bottom: 22px;
 }
 
 .banner-meta{
@@ -25,8 +25,9 @@
     letter-spacing: -2px;
     color: var(--text);
 }
+
 h1.banner-title{
-margin: 23px 0 12px 0;   
+    margin: 23px 0 12px 0;   
 }
 
 .banner-detail{
@@ -60,7 +61,7 @@ margin: 23px 0 12px 0;
 
 /* #region section */
 .section {
-    margin: 57px 80px;
+    margin: 20px 40px;
 }
 
 .section-title{
@@ -85,17 +86,19 @@ margin: 23px 0 12px 0;
 
 .post{
     margin: 64px 0;
+    border: var(--border-black);
 }
 
 .post-image {
     max-height: 318px;
-    margin-bottom: 12px;
 }
 .post-content {
     max-width: 623px;
+    padding: 23px;
 }
+
 .post-meta{
-    margin: 55px 0 20px 0;
+    margin-top: 42px 20px; 
     font-weight: 600;
     color: var(--text-accent);
 }
@@ -127,8 +130,7 @@ margin: 23px 0 12px 0;
 
 .category-card{
     padding: 32px;
-    width: 295px;
-    height: 228px;
+    width: 100%;
     border: var(--border-black);
     border-radius: 4px;
     transition: all 0.3s ease-in;
@@ -240,12 +242,26 @@ margin: 23px 0 12px 0;
         justify-content: space-around;
         gap: 114px;
         flex-direction: row-reverse;
+        padding-top: 96px;   
+        padding-bottom: 83px;
     }
-
     .banner-image {
         max-width: 50%;
     }
+     
+    .section {
+        margin: 57px 80px;
+    }
 
+    .post-meta{
+        margin-top: 55px; 
+        margin-bottom: 20px;
+    }
+
+    .category-card {
+        width: 295px;
+        height: 228px;    
+    }
     .post {
         display: flex;
         gap: 32px;

@@ -17,8 +17,8 @@ body{
 
 /* #region base */
 input{
-    height: 100%;
     font-size: 1.125rem;
+    padding: 16px 17px;
     border-width: 0;
     border-radius: 5px;
     box-shadow: inset -7px 13px 25px -7px rgba(128, 255, 255, 0.39);
@@ -38,7 +38,9 @@ main {
     text-wrap: nowrap;
     cursor: pointer;
 }
-
+.button:disabled {
+    cursor: not-allowed
+}
 .button-primary {
     height: max-content;
     display: block;
@@ -118,6 +120,10 @@ main {
     display: none;
 }
 
+.navbar-action:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 680px) {
     .navbar {
         padding: 20px 80px;
@@ -185,14 +191,12 @@ main {
     line-height: 39.01px;
 }
 
-.navbar-link {
-}
 /* #endregion */
 
 /* #region footer */
 footer {
     background-color: var(--bg-primary-accent);
-    padding: 59px 78px 46px 80px;
+    padding: 62px 7% 37px;
 }
 
 .footer-logo {
@@ -218,7 +222,7 @@ footer {
 }
 
 .footer-cta_input{
-    padding: 16px 17px;
+    max-width: 100%;
 }
 
 @media (min-width: 680px) {
