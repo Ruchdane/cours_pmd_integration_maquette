@@ -1,0 +1,263 @@
+/* #region banner */
+
+.banner {
+    background-color: var(--bg-primary-light);
+    padding: max(4%,62px) 6%;
+}
+
+.banner-image {
+    margin-bottom: 12px;
+}
+
+.banner-meta{
+    font-weight: 500;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--text);
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin-bottom: 17px;
+    letter-spacing: -2px;
+    color: var(--text);
+}
+h1.banner-title{
+margin: 23px 0 12px 0;   
+}
+
+.banner-detail{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+
+.banner-author{
+    color: var(--text-accent);
+}
+
+.banner-description{
+    margin: 40px 0;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.banner-description-strong{
+    color: var(--text);
+}
+
+.banner-call_to_action {
+    justify-self: start;
+    width: fit-content;;
+    color: var(--text);
+    text-decoration: none;
+}
+
+/* #endregion */
+
+/* #region section */
+.section {
+    margin: 57px 80px;
+}
+
+.section-title{
+    font-size: 3rem;
+    line-height: 64px;
+    font-weight: 700;
+}
+
+.section-title.section-title--small {
+    font-size: 2.25px;
+    line-height: 48px;
+    letter-spacing: -2px;    
+}
+
+.section-title_separtor {
+    background-color: var(--text);
+    margin: 32px 0 63px 0;
+}
+/* #endregion */
+
+/* #region post */
+
+.post{
+    margin: 64px 0;
+}
+
+.post-image {
+    max-height: 318px;
+    margin-bottom: 12px;
+}
+.post-content {
+    max-width: 623px;
+}
+.post-meta{
+    margin: 55px 0 20px 0;
+    font-weight: 600;
+    color: var(--text-accent);
+}
+.post-title{
+    font-weight: 700;
+    font-size: 2.25rem;
+}
+.post-description{
+    font-weight: 400;
+    color: var(--text-light);
+}
+.post_list-button {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+/* #endregion */
+
+/* #region category*/
+.category-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 17.46px;
+    margin-top: 48px;
+}
+
+.category-card{
+    padding: 32px;
+    width: 295px;
+    height: 228px;
+    border: var(--border-black);
+    border-radius: 4px;
+    transition: all 0.3s ease-in;
+}
+
+.category-card:hover {
+    background-color: var(--bg-primary-accent);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.category-icon{
+    transition: all 0.8s ease-in;
+    margin-bottom: 10px;
+}
+.category-card:hover  .category-icon {
+    background-color: var(--bg-active-icon);
+}
+.category-title{
+    display: block;
+    text-decoration: none;
+    color: var(--text);
+    margin: 6px 0px;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+
+.category-description{
+    font-weight: 400;
+}
+
+/* #endregion*/
+
+/* #region article */
+.article{
+    display: flex;
+    margin: 26px 20px;
+}
+
+.article_recomendation {
+    display: none;
+}
+
+.article-keypoint, .article-tips_list li::marker {
+    color: var(--primary);
+}
+
+.article_content-images {
+    display: flex;
+    margin: 60px;
+    justify-content: center;
+    gap: 64px;
+    flex-wrap: wrap;
+}
+
+
+.article_recommendation-title {
+    background-color: var(--primary);
+    padding: 12px 0;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 24.38px;
+}
+
+.article_thumb {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin: 17px;
+    padding: 14px;
+    border: 1px solid #00000020;
+}
+
+.article-thumb:hover {
+    background-color: var(--bg-primary-light);
+    border: none;
+}
+
+.article_thumb-image {
+
+}
+.article_thumb-title {
+    margin-bottom: 10px;
+}
+.article_thumb-date {
+
+}
+
+.article-detail{
+    margin-bottom: 49px;
+}
+
+.article-chapter {
+    margin-bottom: 24px;
+}
+/* #endregion */
+
+
+@media (min-width: 680px) {
+    .banner{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 114px;
+        flex-direction: row-reverse;
+    }
+
+    .banner-image {
+        max-width: 50%;
+    }
+
+    .post {
+        display: flex;
+        gap: 32px;
+    }    
+    
+    .article {
+        margin: 40px 156px;
+    }
+    
+    .article_recomendation{
+        display: block;
+        min-width: 382.5px;
+    }
+
+}
