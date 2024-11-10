@@ -219,14 +219,8 @@ margin: 23px 0 12px 0;
     border: none;
 }
 
-.article_thumb-image {
-
-}
 .article_thumb-title {
     margin-bottom: 10px;
-}
-.article_thumb-date {
-
 }
 
 .article-detail{
@@ -237,6 +231,13 @@ margin: 23px 0 12px 0;
     margin-bottom: 24px;
 }
 /* #endregion */
+
+/* #region typographie */
+.article-chapter,  .article-tips_list, .article-conclusion, .article_recomendation{
+    font-family: "Montserrat", sans-serif;
+}
+/* #endRegion */
+
 
 @media (min-width: 680px) {
     .banner{
